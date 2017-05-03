@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Is Y power of X!"
-date:   2017-05-02 17:50:01 -0700
-categories: arithmatic coding
----
-
 ## Problem
 Given numbers x and y, check if y is a power of x.
 
@@ -13,17 +6,16 @@ TODO - update later.
 
 ## Solution
 ```java
-
 public class IsPowOfX {
-    public static boolean isPow(int input, int x) {
-        if (input < 0) return false;
-        if (x == 1) return (input == 1);
+    public static boolean isPow(int y, int x) {
+        if (y < 0) return false;
+        if (x == 1) return (y == 1);
 
         int pow = 1;
-        while (pow < input) {
+        while (pow < y) {
             pow = pow * x;
         }
-        return (pow == input);
+        return (pow == y);
     }
 }
 ```
