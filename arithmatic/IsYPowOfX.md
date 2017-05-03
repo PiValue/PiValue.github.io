@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Is Y power of X!"
+date:   2017-05-02 17:50:01 -0700
+categories: arithmatic coding
+---
+
 ## Problem
 Given numbers x and y, check if y is a power of x.
 
