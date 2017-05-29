@@ -1,3 +1,10 @@
+---
+layout: post
+title: Write a functions to check if y is a power of x.
+category: Coding
+tags: [math, leetcode]
+---
+
 ## Problem
 Given numbers x and y, write a method to check if y is a power of x.
 
