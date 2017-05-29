@@ -1,3 +1,10 @@
+---
+layout: post
+title: Find if Y is power of X.
+category: Coding
+tags: [math, leetcode]
+---
+
 ## Problem
 Given numbers x and y, check if y is a power of x.
 
