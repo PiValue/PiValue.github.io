@@ -1,7 +1,8 @@
 ### Given
 Given 2 arrays return their intersection (set intersection).
 
-
+##### Tags
+`facebook`, `arrays`
 
 ### Solution
 There are two cases with arrays sorted and unsorted.
