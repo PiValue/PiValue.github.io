@@ -1,12 +1,12 @@
-####Given
+### Given
 Given 2 arrays return their intersection (set intersection).
 
 
 
-####Solution
+### Solution
 There are two cases with arrays sorted and unsorted.
 
-#####Intersection of sorted Arrays
+#### Intersection of sorted Arrays
 Since the input arrays are already sorted, we could use iterate through each together and look for common elements.
 
 ```java
