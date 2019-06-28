@@ -39,3 +39,37 @@ public int[] intersect(int[] nums1, int[] nums2) {
 #####Interesection of unsorted arrays
 * Method-1: We could sort the arrays and do it like above.
 * Method-2: Use Hashtable to keep counts and find intersection through that.
+
+```java
+public int[] intersection(int[] nums1, int[] nums2) {
+    if (nums1 == null || nums2 == null) return new int[] {};
+
+    final Map<Integer, Integer> counts1 = getFrequency(nums1);
+    final Map<Integer, Integer> counts2 = getFrequency(nums2);
+
+    List<Integer> result = new ArrayList<>();
+    for (Integer key : counts1.keySet()) {
+        if (!counts2.containsKey(key)) continue;
+
+        for (int i = 0; i < Math.min(counts1.get(key), counts2.get(key)); i++) {
+            result.add(key);
+        }
+    }
+
+    int[] ret = new int[result.size()];
+    // Build array - better way to do in java?
+    for (int i = 0; i < result.size(); i++) {
+        ret[i] = result.get(i);
+    }
+    return ret;
+}
+
+private Map<Integer, Integer> getFrequency(int[] nums) {
+    final Map<Integer, Integer> counts = new HashMap<>();
+    for (int num : nums) {
+        counts.putIfAbsent(num, 0);
+        counts.put(num, counts.get(num) + 1);
+    }
+    return counts;
+}
+```
