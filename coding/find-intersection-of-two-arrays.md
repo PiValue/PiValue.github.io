@@ -6,6 +6,8 @@ Given 2 arrays return their intersection (set intersection).
 
 ### Solution
 There are two cases with arrays sorted and unsorted.
+Note:
+* Verify how duplicates are treated, whether output should return unique or multiple items for values are repeated in input.
 
 #### Intersection of sorted Arrays
 Since the input arrays are already sorted, we could use iterate through each together and look for common elements.
@@ -36,7 +38,7 @@ public int[] intersect(int[] nums1, int[] nums2) {
 }
 ```
 
-#####Interesection of unsorted arrays
+##### Interesection of unsorted arrays
 * Method-1: We could sort the arrays and do it like above.
 * Method-2: Use Hashtable to keep counts and find intersection through that.
 
@@ -73,3 +75,4 @@ private Map<Integer, Integer> getFrequency(int[] nums) {
     return counts;
 }
 ```
+
